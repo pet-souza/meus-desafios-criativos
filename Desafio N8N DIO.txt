@@ -1,0 +1,25 @@
+Atue como um especialista em N8N e crie a automação seguindo os passos a seguir:
+
+1- Quero criar uma automação no N8N para registro e controle de contas a pagar conforme faturas e boletos são recebidos para posterior pagamento.
+
+2- Público ou responsável:
+Setor Financeiro
+
+3- Resultado esperado:
+Salvar os dados dos credores em uma planilha (como Nome credor, Produto, Nº da Nota Fiscal, Nº Parcela, Valor e Vencimento), organizados por data de vencimento, e enviar um e-mail de notificação com os vencimentos do dia.
+
+4- Ferramentas envolvidas:
+Pasta local, google planilhas, e-mail corporativo. 
+
+
+5- Fluxo desejado:
+1. Acessar a pasta com as faturas e boletos enviados pelos credores;
+2. Registrar os dados de cada fatura ou boleto adicionado;
+3. Registrar os dados dos credores na planilha;
+4. Verificar a data de vencimento;
+5. Enviar e-mail ao financeiro informando os vencimentos do dia.
+
+6- Regras importantes:
+Verificar número do documento, número da nota fiscal cobrada e data de vencimento para não realizar registros duplicados.
+
+Para realização da automação, primeiramente, adicione o nó de acesso à pasta local reservada para armazenamento dos documentos sendo verificada automaticamente a cada novo documento incluso. Em seguida, crie um nó de acesso à planilha disponibilizada para armazenamento dos dados financeiros, sendo que, para cada novo documento, será criado o registro com os dados solicitados na planilha. Em sequência, crie um nó de acesso a um endereço de e-mail para envio das informações do dia, automatizando o envio do e-mail com os vencimentos, na mesma data da consulta, para um endereço de e-mail específico a ser informado.
